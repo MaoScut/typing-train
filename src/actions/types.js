@@ -1,2 +1,3 @@
 export const SET_FONTSIZE = 'SET_FONTSIZE';
 export const SET_SPEED = 'SET_SPEED';
+export const SET_FONT_SIZE_AND_SPEED = 'SET_FONT_SIZE_AND_SPEED';
