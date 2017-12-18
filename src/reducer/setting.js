@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import { SET_FONTSIZE } from '../actions/types';
+import * as TYPES from '../actions/types';
 
 const defaultState = {
   speed: 1,
@@ -7,10 +7,10 @@ const defaultState = {
 };
 
 const reducer = handleActions({
-  [SET_FONTSIZE](state, action) {
+  [TYPES.SET_FONT_SIZE_AND_SPEED](state, action) {
     return {
-      ...state,
-      fontSize: action.payload,
+      speed: action.payload.speed,
+      fontSize: action.payload.fontSize,
     };
   },
 }, defaultState);
