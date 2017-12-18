@@ -1,13 +1,24 @@
 import React from 'react';
-import FallingObj from '../fallingObj';
+// import FallingObj from '../fallingObj';
 
-export default () => (
-  <div>
-    <FallingObj content="A" left={10} />
-    <FallingObj content="A" left={20} />
-    <FallingObj content="A" left={30} />
-    <FallingObj content="A" left={40} />
-    <FallingObj content="A" left={50} />
-    <FallingObj content="A" left={60} />
-  </div>
-);
+export default class Setting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.props.actions.setFontSizeAndSpeed({
+      fontSize: this.fontSizeInput.value,
+      speed: this.speedInput.value,
+    });
+  }
+  render() {
+    return (
+      <div>
+        <input defaultValue="14" ref={(input) => { this.fontSizeInput = input; }} type="text" />
+        <input defaultValue="1" ref={(input) => { this.speedInput = input; }} type="text" />
+        <button onClick={this.handleClick}>设置</button>
+      </div>
+    );
+  }
+}
