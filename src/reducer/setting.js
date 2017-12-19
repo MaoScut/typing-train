@@ -3,7 +3,7 @@ import * as TYPES from '../actions/types';
 
 const defaultState = {
   speed: 1,
-  fontSize: 1,
+  fontSize: 14,
 };
 
 const reducer = handleActions({

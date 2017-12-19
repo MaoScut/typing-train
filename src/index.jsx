@@ -4,12 +4,15 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 // import App from './container';
-import { CSetting as Setting } from './components/containers';
+import { CSetting as Setting, CFallingObjs as FallingObjs } from './components/containers';
 
 const store = createStore(reducer);
 const App = (
   <Provider store={store} >
-    <Setting />
+    <div>
+      <Setting />
+      <FallingObjs />
+    </div>
   </Provider>
 );
 // const App = () => (
