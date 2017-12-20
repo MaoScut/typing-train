@@ -4,6 +4,7 @@ import * as TYPES from '../actions/types';
 const defaultState = {
   speed: 1,
   fontSize: 14,
+  start: false,
 };
 
 const reducer = handleActions({
@@ -11,6 +12,7 @@ const reducer = handleActions({
     return {
       speed: action.payload.speed,
       fontSize: action.payload.fontSize,
+      start: true,
     };
   },
 }, defaultState);

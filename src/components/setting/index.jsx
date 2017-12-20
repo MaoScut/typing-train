@@ -17,7 +17,7 @@ export default class Setting extends React.Component {
       <div>
         <input defaultValue="14" ref={(input) => { this.fontSizeInput = input; }} type="text" />
         <input defaultValue="1" ref={(input) => { this.speedInput = input; }} type="text" />
-        <button onClick={this.handleClick}>设置</button>
+        <button onClick={this.handleClick}>开始</button>
       </div>
     );
   }
