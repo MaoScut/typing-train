@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions';
 import Setting from './setting';
-import FallingObjs from './fallingObjs';
+import Sky from './sky';
 
 const CSetting = connect(
   state => state.setting,
@@ -11,12 +11,12 @@ const CSetting = connect(
   }),
 )(Setting);
 
-const CFallingObjs = connect(
+const CSky = connect(
   state => state.setting,
   null,
-)(FallingObjs);
+)(Sky);
 
 export {
   CSetting,
-  CFallingObjs,
+  CSky,
 };
