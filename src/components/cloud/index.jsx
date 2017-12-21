@@ -4,7 +4,7 @@ import './main.scss';
 export default function fallingObj({ content, left, fontSize, speed }) {
   const styleObj = {
     left,
-    fontSize,
+    fontSize: fontSize + 'px',
   };
   return (
     <div style={styleObj} className="fallingObj" >
