@@ -35,7 +35,17 @@ export default class sky extends React.Component {
       this.setState({
         clouds: arr,
       });
-    }, 100);
+    }, 1000);
+    document.addEventListener('keydown', (e) => {
+      const arr = this.state.clouds.slice();
+      const index = arr.findIndex(c => c.content === e.key);
+      if (index >= 0) {
+        arr.splice(index, 1);
+        this.setState({
+          clouds: arr,
+        });
+      }
+    });
   }
   render() {
     if (!this.props.start) {
