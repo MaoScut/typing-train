@@ -1,4 +1,5 @@
 import React from 'react';
+import uuid from 'uuid';
 import Cloud from '../cloud';
 import nextChar from '../../dictionary';
 
@@ -19,11 +20,11 @@ import nextChar from '../../dictionary';
 export default class sky extends React.Component {
   constructor(props) {
     super(props);
+    this.fallDownHandle = this.fallDownHandle.bind(this);
     this.state = {
       clouds: [],
     };
   }
-
   componentDidMount() {
     setInterval(() => {
       const c = nextChar();
@@ -31,6 +32,7 @@ export default class sky extends React.Component {
         content: c,
         time: new Date(),
         left: Math.random() * 400,
+        key: uuid.v4(),
       });
       this.setState({
         clouds: arr,
@@ -47,12 +49,26 @@ export default class sky extends React.Component {
       }
     });
   }
+  fallDownHandle(index) {
+    const arr = this.state.clouds.slice();
+    arr.splice(index, 1);
+    this.setState({
+      clouds: arr,
+    });
+  }
   render() {
     if (!this.props.start) {
       return null;
     }
-    const arr = this.state.clouds.map(c => (
-      <Cloud left={c.left} fontSize={this.props.fontSize} content={c.content} />
+    const arr = this.state.clouds.map((c, index) => (
+      <Cloud
+        key={c.key}
+        fallDownHandle={this.fallDownHandle}
+        left={c.left}
+        fontSize={this.props.fontSize}
+        content={c.content}
+        index={index}
+      />
     ));
     return (
       <div>
