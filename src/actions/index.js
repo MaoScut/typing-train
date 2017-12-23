@@ -14,9 +14,15 @@ export function setSpeed(speed) {
   };
 }
 
-export function setFontSizeAndSpeed(obj) {
+export function set(obj) {
   return {
-    type: TYPES.SET_FONT_SIZE_AND_SPEED,
+    type: TYPES.SET,
     payload: obj,
+  };
+}
+
+export function missOne() {
+  return {
+    type: TYPES.MISS_ONE,
   };
 }
