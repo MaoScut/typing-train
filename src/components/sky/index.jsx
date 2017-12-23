@@ -55,6 +55,7 @@ export default class sky extends React.Component {
     this.setState({
       clouds: arr,
     });
+    this.props.actions.missOne();
   }
   render() {
     if (!this.props.start) {

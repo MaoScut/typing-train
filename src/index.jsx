@@ -4,13 +4,14 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducer';
 // import App from './container';
-import { CSetting as Setting, CSky as Sky } from './components/containers';
+import { CSetting as Setting, CSky as Sky, CLife as Life } from './components/containers';
 
 const store = createStore(reducer);
 const App = (
   <Provider store={store} >
     <div>
       <Setting />
+      <Life />
       <Sky />
     </div>
   </Provider>
