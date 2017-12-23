@@ -2,6 +2,8 @@
   animation: fall 4s linear;
   position: absolute;
   bottom: 0;
+  padding: 10px;
+  background-color: gray;
 }
 @keyframes fall {
   0% {
