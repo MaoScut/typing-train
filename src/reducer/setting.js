@@ -6,6 +6,7 @@ const defaultState = {
   fontSize: 14,
   start: false,
   hp: 100,
+  time: 5 * 60 * 1000,
 };
 
 const reducer = handleActions({
@@ -15,6 +16,7 @@ const reducer = handleActions({
       fontSize: action.payload.fontSize,
       start: true,
       hp: action.payload.hp,
+      time: action.payload.time,
     };
   },
   [TYPES.MISS_ONE](state) {
