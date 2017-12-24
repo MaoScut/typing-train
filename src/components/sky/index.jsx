@@ -2,6 +2,7 @@ import React from 'react';
 import uuid from 'uuid';
 import Cloud from '../cloud';
 import nextChar from '../../dictionary';
+import { clearInterval } from 'timers';
 
 // export default function ({speed, fontSize, start}) {
 //   const arr = [];
@@ -21,12 +22,36 @@ export default class sky extends React.Component {
   constructor(props) {
     super(props);
     this.fallDownHandle = this.fallDownHandle.bind(this);
+    this.go = this.go.bind(this);
     this.state = {
       clouds: [],
+      data: {},
     };
   }
   componentDidMount() {
-    setInterval(() => {
+    document.addEventListener('keydown', (e) => {
+      const arr = this.state.clouds.slice();
+      const index = arr.findIndex(c => c.content === e.key);
+      if (index >= 0) {
+        const cloud = arr.splice(index, 1)[0];
+        const d = this.state.data;
+        const ind = d[cloud.content].findIndex(v => v === Infinity);
+        d[cloud.content][ind] = new Date() - cloud.time;
+        this.setState({
+          clouds: arr,
+          data: d,
+        });
+      }
+    });
+  }
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.start && !this.timer) {
+      this.startTime = new Date();
+      this.timer = setInterval(this.go, 1000);
+    }
+  }
+  go() {
+    if (new Date() - this.startTime <= this.props.time) {
       const c = nextChar();
       const arr = this.state.clouds.concat({
         content: c,
@@ -34,20 +59,19 @@ export default class sky extends React.Component {
         left: Math.random() * 400,
         key: uuid.v4(),
       });
+      const nData = this.state.data;
+      if (nData[c] === undefined) {
+        nData[c] = [Infinity];
+      } else {
+        nData[c].push(Infinity);
+      }
       this.setState({
         clouds: arr,
+        data: nData,
       });
-    }, 1000);
-    document.addEventListener('keydown', (e) => {
-      const arr = this.state.clouds.slice();
-      const index = arr.findIndex(c => c.content === e.key);
-      if (index >= 0) {
-        arr.splice(index, 1);
-        this.setState({
-          clouds: arr,
-        });
-      }
-    });
+    } else {
+      window.clearInterval(this.timer);
+    }
   }
   fallDownHandle(index) {
     const arr = this.state.clouds.slice();
@@ -58,9 +82,6 @@ export default class sky extends React.Component {
     this.props.actions.missOne();
   }
   render() {
-    if (!this.props.start) {
-      return null;
-    }
     const arr = this.state.clouds.map((c, index) => (
       <Cloud
         key={c.key}
