@@ -2,7 +2,6 @@ import React from 'react';
 import uuid from 'uuid';
 import Cloud from '../cloud';
 import nextChar from '../../dictionary';
-import { clearInterval } from 'timers';
 
 // export default function ({speed, fontSize, start}) {
 //   const arr = [];
