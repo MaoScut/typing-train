@@ -17,6 +17,34 @@ import nextChar from '../../dictionary';
 //     </div>
 //   );
 // }
+function dataProcess(rawData) {
+  const result = {};
+  for (let i = 0; i < rawData.length; i += 1) {
+    const key = rawData[i].content;
+    if (!result[key]) {
+      result[key] = {
+        detail: [],
+        missTime: 0,
+      };
+    }
+    if (rawData[i].clearedTime === Infinity) {
+      result[key].missTime += 1;
+    } else {
+      result[key].detail.push(rawData[i].clearedTime - rawData[i].time);
+    }
+  }
+  Object.keys(result).forEach((k) => {
+    if (result[k].detail.length === 0) {
+      result[k].averageTime = 0;
+    } else {
+      const sum = result[k].detail.reduce((pre, cur) => pre + cur);
+      result[k].averageTime = sum / result[k].detail.length;
+    }
+    delete result[k].detail;
+  });
+  return result;
+}
+
 export default class sky extends React.Component {
   constructor(props) {
     super(props);
@@ -24,7 +52,7 @@ export default class sky extends React.Component {
     this.go = this.go.bind(this);
     this.state = {
       clouds: [],
-      data: {},
+      data: [],
     };
   }
   componentDidMount() {
@@ -34,8 +62,8 @@ export default class sky extends React.Component {
       if (index >= 0) {
         const cloud = arr.splice(index, 1)[0];
         const d = this.state.data;
-        const ind = d[cloud.content].findIndex(v => v === Infinity);
-        d[cloud.content][ind] = new Date() - cloud.time;
+        cloud.clearedTime = new Date();
+        d.push(cloud);
         this.setState({
           clouds: arr,
           data: d,
@@ -58,25 +86,24 @@ export default class sky extends React.Component {
         left: Math.random() * 400,
         key: uuid.v4(),
       });
-      const nData = this.state.data;
-      if (nData[c] === undefined) {
-        nData[c] = [Infinity];
-      } else {
-        nData[c].push(Infinity);
-      }
       this.setState({
         clouds: arr,
-        data: nData,
       });
     } else {
       window.clearInterval(this.timer);
+      this.timer = null;
+      this.props.actions.submitData(dataProcess(this.state.data));
     }
   }
   fallDownHandle(index) {
     const arr = this.state.clouds.slice();
-    arr.splice(index, 1);
+    const cloud = arr.splice(index, 1)[0];
+    cloud.clearedTime = Infinity;
+    const nData = this.state.data;
+    nData.push(cloud);
     this.setState({
       clouds: arr,
+      data: nData,
     });
     this.props.actions.missOne();
   }
@@ -98,3 +125,4 @@ export default class sky extends React.Component {
     );
   }
 }
+

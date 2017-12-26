@@ -1,6 +1,38 @@
 {
   "overall": {},
   "detail": [
-    null
+    null,
+    {
+      "/": {
+        "missTime": 0,
+        "averageTime": 0
+      },
+      "S": {
+        "missTime": 0,
+        "averageTime": 0
+      },
+      "J": {
+        "missTime": 0,
+        "averageTime": 0
+      },
+      "?": {
+        "missTime": 0,
+        "averageTime": 0
+      }
+    },
+    {
+      "%": {
+        "missTime": 0,
+        "averageTime": 2743
+      },
+      "'": {
+        "missTime": 0,
+        "averageTime": 2760
+      },
+      "Q": {
+        "missTime": 0,
+        "averageTime": 2817
+      }
+    }
   ]
 }
