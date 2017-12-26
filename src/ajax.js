@@ -1,11 +1,15 @@
-export function saveData(data) {
-  const xhr = new XMLHttpRequest();
-  xhr.open('post', '/sendTrainData');
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState == 4) {
-      if (xhr.status >= 200 && xhr.status < 300 || xhr.status === 304) {
-        console.log('ok');
+export default function saveData(data) {
+  return new Promise((resolve) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('post', '/sendTrainData');
+    xhr.onreadystatechange = function a() {
+      if (xhr.readyState === 4) {
+        if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+          resolve();
+        }
       }
-    }
-  }
+    };
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.send(JSON.stringify(data));
+  });
 }
