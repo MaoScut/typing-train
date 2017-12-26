@@ -1,4 +1,5 @@
 import * as TYPES from './types';
+import api from '../ajax';
 
 export function setFontSize(size) {
   return {
@@ -24,5 +25,13 @@ export function set(obj) {
 export function missOne() {
   return {
     type: TYPES.MISS_ONE,
+  };
+}
+
+export function submitData(data) {
+  return (dispatch) => {
+    api(data).then(() => dispatch({
+      type: TYPES.SEND_DATA,
+    }));
   };
 }
