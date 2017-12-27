@@ -28,6 +28,12 @@ export function missOne() {
   };
 }
 
+export function over() {
+  return {
+    type: TYPES.OVER,
+  };
+}
+
 export function submitData(data) {
   return (dispatch) => {
     api(data).then(() => dispatch({

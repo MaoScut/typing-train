@@ -78,7 +78,7 @@ export default class sky extends React.Component {
     }
   }
   go() {
-    if (new Date() - this.startTime <= this.props.time) {
+    if (new Date() - this.startTime < this.props.time) {
       const c = nextChar();
       const arr = this.state.clouds.concat({
         content: c,
@@ -86,12 +86,14 @@ export default class sky extends React.Component {
         left: Math.random() * 400,
         key: uuid.v4(),
       });
-      this.setState({
+      this.setState(preState => ({
         clouds: arr,
-      });
+        time: preState - 1,
+      }));
     } else {
       window.clearInterval(this.timer);
       this.timer = null;
+      this.props.actions.over();
       this.props.actions.submitData(dataProcess(this.state.data));
     }
   }

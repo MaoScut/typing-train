@@ -25,6 +25,12 @@ const reducer = handleActions({
       hp: state.hp - 1,
     };
   },
+  [TYPES.OVER](state) {
+    return {
+      ...state,
+      start: false,
+    };
+  },
 }, defaultState);
 
 export default reducer;
