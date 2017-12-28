@@ -19,12 +19,6 @@ const reducer = handleActions({
       time: action.payload.time,
     };
   },
-  [TYPES.MISS_ONE](state) {
-    return {
-      ...state,
-      hp: state.hp - 1,
-    };
-  },
   [TYPES.OVER](state) {
     return {
       ...state,

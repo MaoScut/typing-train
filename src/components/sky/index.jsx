@@ -53,6 +53,7 @@ export default class sky extends React.Component {
     this.state = {
       clouds: [],
       data: [],
+      time: this.props.time,
     };
   }
   componentDidMount() {
@@ -72,30 +73,34 @@ export default class sky extends React.Component {
     });
   }
   componentWillReceiveProps(nextProps) {
-    if (nextProps.start && !this.timer) {
-      this.startTime = new Date();
-      this.timer = setInterval(this.go, 1000);
+    if (nextProps.start) {
+      this.setState({
+        time: nextProps.time,
+      })
+      this.timer = setInterval(() => {
+        if (this.state.time > 0) {
+          this.go();
+        } else {
+          clearInterval(this.timer);
+          this.timer = null;
+          this.props.actions.over();
+          // this.props.actions.submitData(dataProcess(this.state.data));
+        }
+      }, 1000);
     }
   }
   go() {
-    if (new Date() - this.startTime < this.props.time) {
-      const c = nextChar();
-      const arr = this.state.clouds.concat({
-        content: c,
-        time: new Date(),
-        left: Math.random() * 400,
-        key: uuid.v4(),
-      });
-      this.setState(preState => ({
-        clouds: arr,
-        time: preState - 1,
-      }));
-    } else {
-      window.clearInterval(this.timer);
-      this.timer = null;
-      this.props.actions.over();
-      this.props.actions.submitData(dataProcess(this.state.data));
-    }
+    const c = nextChar();
+    const arr = this.state.clouds.concat({
+      content: c,
+      time: new Date(),
+      left: Math.random() * 400,
+      key: uuid.v4(),
+    });
+    this.setState(preState => ({
+      clouds: arr,
+      time: preState.time - 1000,
+    }));
   }
   fallDownHandle(index) {
     const arr = this.state.clouds.slice();
@@ -107,7 +112,6 @@ export default class sky extends React.Component {
       clouds: arr,
       data: nData,
     });
-    this.props.actions.missOne();
   }
   render() {
     const arr = this.state.clouds.map((c, index) => (
@@ -122,7 +126,10 @@ export default class sky extends React.Component {
     ));
     return (
       <div>
-        {arr}
+        {this.state.time}
+        <div>
+          {arr}
+        </div>
       </div>
     );
   }
