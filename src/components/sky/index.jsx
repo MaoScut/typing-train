@@ -50,6 +50,7 @@ export default class sky extends React.Component {
     super(props);
     this.fallDownHandle = this.fallDownHandle.bind(this);
     this.go = this.go.bind(this);
+    this.timer = this.timer.bind(this);
     this.state = {
       clouds: [],
       data: [],
@@ -73,21 +74,29 @@ export default class sky extends React.Component {
     });
   }
   componentWillReceiveProps(nextProps) {
+    this.setState({
+      time: nextProps.time,
+    });
     if (nextProps.start) {
-      this.setState({
-        time: nextProps.time,
-      })
       this.timer = setInterval(() => {
-        if (this.state.time > 0) {
-          this.go();
-        } else {
+        this.setState(preState => ({
+          time: preState.time - 100,
+        }));
+        if (this.state.time <= 0) {
           clearInterval(this.timer);
-          this.timer = null;
+          clearInterval(this.cloudInterval);
           this.props.actions.over();
-          // this.props.actions.submitData(dataProcess(this.state.data));
         }
-      }, 1000);
+      }, 100);
+      this.cloudInterval = setInterval(this.go, 1000);
     }
+  }
+  timer() {
+    this.timer = setInterval(() => {
+      this.setState(preState => ({
+        time: preState.time - 100,
+      }));
+    }, 100);
   }
   go() {
     const c = nextChar();
@@ -97,10 +106,9 @@ export default class sky extends React.Component {
       left: Math.random() * 400,
       key: uuid.v4(),
     });
-    this.setState(preState => ({
+    this.setState({
       clouds: arr,
-      time: preState.time - 1000,
-    }));
+    });
   }
   fallDownHandle(index) {
     const arr = this.state.clouds.slice();
