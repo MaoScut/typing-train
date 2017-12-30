@@ -88,7 +88,7 @@ export default class sky extends React.Component {
           this.props.actions.over();
         }
       }, 100);
-      this.cloudInterval = setInterval(this.go, 1000);
+      this.cloudInterval = setInterval(this.go, 1000 / nextProps.speed);
     }
   }
   timer() {
