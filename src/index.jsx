@@ -5,15 +5,18 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import reducer from './reducer';
 // import App from './container';
-import { CSetting as Setting, CSky as Sky, CLife as Life } from './components/containers';
+import {
+  CSetting as Setting,
+  CLife as Life,
+  CContainer as Container,
+} from './components/containers';
 
 const store = createStore(reducer, applyMiddleware(thunk));
 const App = (
   <Provider store={store} >
     <div>
       <Setting />
-      <Life />
-      <Sky />
+      <Container />
     </div>
   </Provider>
 );
