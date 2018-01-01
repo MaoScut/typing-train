@@ -5,7 +5,7 @@ const lowerCaseLetter = 'qwertyuiopasdfghjklzxcvbnm';
 const upperCaseLetter = 'QWERTYUIOPASDFGHJKLZXCVBNM';
 // 特殊符号
 // const symbol = '';
-const symbol = '`~!@#$%^&*()_+-=|:;"<,>.?/';
+const symbol = '`~!@#$%^&*()_+-=|:;"<,>.?/[]{}';
 const symbol2 = '\\\'';
 const set = lowerCaseLetter + upperCaseLetter + symbol + symbol2;
 function next() {
