@@ -1,4 +1,5 @@
 import React from 'react';
+import './main.scss';
 // import FallingObj from '../fallingObj';
 
 export default class Setting extends React.Component {
@@ -16,7 +17,7 @@ export default class Setting extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="setting">
         字体大小:
         <input
           defaultValue={this.props.fontSize}

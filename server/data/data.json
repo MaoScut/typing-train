@@ -4404,6 +4404,1254 @@
         "missTime": 0,
         "averageTime": 2973
       }
+    },
+    {
+      "^": {
+        "missTime": 1,
+        "averageTime": 3663
+      },
+      "O": {
+        "missTime": 1,
+        "averageTime": 3746
+      },
+      "k": {
+        "missTime": 1,
+        "averageTime": 3266.8
+      },
+      "i": {
+        "missTime": 0,
+        "averageTime": 3150.3333333333335
+      },
+      "n": {
+        "missTime": 1,
+        "averageTime": 3573.25
+      },
+      "o": {
+        "missTime": 2,
+        "averageTime": 3458
+      },
+      "$": {
+        "missTime": 1,
+        "averageTime": 3627.5
+      },
+      "s": {
+        "missTime": 3,
+        "averageTime": 3415
+      },
+      "-": {
+        "missTime": 5,
+        "averageTime": 0
+      },
+      ":": {
+        "missTime": 4,
+        "averageTime": 0
+      },
+      "C": {
+        "missTime": 0,
+        "averageTime": 3457
+      },
+      "e": {
+        "missTime": 1,
+        "averageTime": 3164
+      },
+      "a": {
+        "missTime": 1,
+        "averageTime": 3415.5
+      },
+      "V": {
+        "missTime": 0,
+        "averageTime": 4105.5
+      },
+      "g": {
+        "missTime": 0,
+        "averageTime": 3411.75
+      },
+      "q": {
+        "missTime": 0,
+        "averageTime": 3550.5
+      },
+      "~": {
+        "missTime": 1,
+        "averageTime": 2941
+      },
+      ".": {
+        "missTime": 0,
+        "averageTime": 3355
+      },
+      "\"": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      ">": {
+        "missTime": 1,
+        "averageTime": 3161
+      },
+      "m": {
+        "missTime": 1,
+        "averageTime": 3105.5
+      },
+      "R": {
+        "missTime": 1,
+        "averageTime": 3797.5
+      },
+      "p": {
+        "missTime": 0,
+        "averageTime": 3879
+      },
+      "H": {
+        "missTime": 0,
+        "averageTime": 3369.8
+      },
+      "U": {
+        "missTime": 0,
+        "averageTime": 3635
+      },
+      "P": {
+        "missTime": 3,
+        "averageTime": 3532.3333333333335
+      },
+      "`": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      ")": {
+        "missTime": 2,
+        "averageTime": 3433
+      },
+      "f": {
+        "missTime": 0,
+        "averageTime": 3451.25
+      },
+      "E": {
+        "missTime": 0,
+        "averageTime": 3572.5
+      },
+      "N": {
+        "missTime": 1,
+        "averageTime": 3539
+      },
+      "j": {
+        "missTime": 0,
+        "averageTime": 3238.5
+      },
+      "=": {
+        "missTime": 2,
+        "averageTime": 3433.5
+      },
+      "|": {
+        "missTime": 3,
+        "averageTime": 3477
+      },
+      "_": {
+        "missTime": 2,
+        "averageTime": 3877.5
+      },
+      "'": {
+        "missTime": 3,
+        "averageTime": 3584
+      },
+      ";": {
+        "missTime": 3,
+        "averageTime": 2363
+      },
+      "T": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "W": {
+        "missTime": 2,
+        "averageTime": 3615.6666666666665
+      },
+      "(": {
+        "missTime": 1,
+        "averageTime": 3511.75
+      },
+      "u": {
+        "missTime": 0,
+        "averageTime": 3433
+      },
+      "K": {
+        "missTime": 1,
+        "averageTime": 3714
+      },
+      "?": {
+        "missTime": 0,
+        "averageTime": 3433
+      },
+      "w": {
+        "missTime": 1,
+        "averageTime": 3039.6666666666665
+      },
+      "/": {
+        "missTime": 1,
+        "averageTime": 3519
+      },
+      "&": {
+        "missTime": 2,
+        "averageTime": 4016
+      },
+      "<": {
+        "missTime": 1,
+        "averageTime": 3905
+      },
+      "c": {
+        "missTime": 0,
+        "averageTime": 3656
+      },
+      "D": {
+        "missTime": 1,
+        "averageTime": 3602.5
+      },
+      "%": {
+        "missTime": 4,
+        "averageTime": 0
+      },
+      ",": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      "y": {
+        "missTime": 0,
+        "averageTime": 3903
+      },
+      "A": {
+        "missTime": 0,
+        "averageTime": 3168
+      },
+      "Z": {
+        "missTime": 1,
+        "averageTime": 3478.5
+      },
+      "h": {
+        "missTime": 0,
+        "averageTime": 2849
+      },
+      "l": {
+        "missTime": 4,
+        "averageTime": 0
+      },
+      "\\": {
+        "missTime": 4,
+        "averageTime": 0
+      },
+      "J": {
+        "missTime": 1,
+        "averageTime": 3259
+      },
+      "S": {
+        "missTime": 3,
+        "averageTime": 3473
+      },
+      "!": {
+        "missTime": 0,
+        "averageTime": 3884
+      },
+      "b": {
+        "missTime": 0,
+        "averageTime": 3642.5
+      },
+      "*": {
+        "missTime": 1,
+        "averageTime": 177
+      },
+      "t": {
+        "missTime": 0,
+        "averageTime": 3720
+      },
+      "z": {
+        "missTime": 1,
+        "averageTime": 3463
+      },
+      "+": {
+        "missTime": 0,
+        "averageTime": 3768
+      },
+      "M": {
+        "missTime": 0,
+        "averageTime": 3260
+      },
+      "G": {
+        "missTime": 0,
+        "averageTime": 3929
+      },
+      "#": {
+        "missTime": 1,
+        "averageTime": 3433
+      },
+      "Q": {
+        "missTime": 0,
+        "averageTime": 3447
+      },
+      "d": {
+        "missTime": 0,
+        "averageTime": 3028
+      },
+      "L": {
+        "missTime": 2,
+        "averageTime": 3322
+      },
+      "X": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "v": {
+        "missTime": 1,
+        "averageTime": 3047.6666666666665
+      },
+      "x": {
+        "missTime": 1,
+        "averageTime": 3411
+      },
+      "@": {
+        "missTime": 0,
+        "averageTime": 3458
+      },
+      "B": {
+        "missTime": 0,
+        "averageTime": 3443
+      },
+      "r": {
+        "missTime": 1,
+        "averageTime": 0
+      }
+    },
+    {
+      "r": {
+        "missTime": 2,
+        "averageTime": 2847.285714285714
+      },
+      "F": {
+        "missTime": 1,
+        "averageTime": 3218.75
+      },
+      "t": {
+        "missTime": 0,
+        "averageTime": 2725
+      },
+      "D": {
+        "missTime": 0,
+        "averageTime": 3204.6666666666665
+      },
+      "j": {
+        "missTime": 0,
+        "averageTime": 3247.75
+      },
+      "(": {
+        "missTime": 0,
+        "averageTime": 3405.7
+      },
+      "C": {
+        "missTime": 3,
+        "averageTime": 3270.5
+      },
+      "g": {
+        "missTime": 0,
+        "averageTime": 3166.25
+      },
+      "E": {
+        "missTime": 0,
+        "averageTime": 3245.2
+      },
+      "M": {
+        "missTime": 0,
+        "averageTime": 3092.5
+      },
+      "B": {
+        "missTime": 2,
+        "averageTime": 3257.2
+      },
+      "$": {
+        "missTime": 0,
+        "averageTime": 3343
+      },
+      "R": {
+        "missTime": 2,
+        "averageTime": 2213.6666666666665
+      },
+      "m": {
+        "missTime": 0,
+        "averageTime": 3358
+      },
+      "*": {
+        "missTime": 1,
+        "averageTime": 3550
+      },
+      "P": {
+        "missTime": 1,
+        "averageTime": 3395.3333333333335
+      },
+      "a": {
+        "missTime": 1,
+        "averageTime": 3487.5
+      },
+      "Y": {
+        "missTime": 1,
+        "averageTime": 3502.8
+      },
+      "V": {
+        "missTime": 1,
+        "averageTime": 3241
+      },
+      "y": {
+        "missTime": 1,
+        "averageTime": 3238.3333333333335
+      },
+      "v": {
+        "missTime": 0,
+        "averageTime": 2816.75
+      },
+      "f": {
+        "missTime": 0,
+        "averageTime": 2629.5
+      },
+      "i": {
+        "missTime": 0,
+        "averageTime": 3663.5
+      },
+      "+": {
+        "missTime": 2,
+        "averageTime": 3711
+      },
+      "%": {
+        "missTime": 2,
+        "averageTime": 3672
+      },
+      "&": {
+        "missTime": 4,
+        "averageTime": 3591
+      },
+      "^": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      ")": {
+        "missTime": 1,
+        "averageTime": 3254
+      },
+      ":": {
+        "missTime": 1,
+        "averageTime": 2808
+      },
+      "<": {
+        "missTime": 0,
+        "averageTime": 3173.6666666666665
+      },
+      "z": {
+        "missTime": 0,
+        "averageTime": 2907.5
+      },
+      "o": {
+        "missTime": 0,
+        "averageTime": 3021
+      },
+      "~": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "/": {
+        "missTime": 0,
+        "averageTime": 3334.5
+      },
+      "w": {
+        "missTime": 0,
+        "averageTime": 3514.6666666666665
+      },
+      "h": {
+        "missTime": 0,
+        "averageTime": 3223.25
+      },
+      "?": {
+        "missTime": 0,
+        "averageTime": 3746
+      },
+      "I": {
+        "missTime": 3,
+        "averageTime": 3471.5
+      },
+      "W": {
+        "missTime": 0,
+        "averageTime": 3305.3333333333335
+      },
+      "d": {
+        "missTime": 0,
+        "averageTime": 3320
+      },
+      "=": {
+        "missTime": 0,
+        "averageTime": 3428
+      },
+      "A": {
+        "missTime": 1,
+        "averageTime": 3623.25
+      },
+      "p": {
+        "missTime": 0,
+        "averageTime": 3613.2
+      },
+      "-": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "l": {
+        "missTime": 5,
+        "averageTime": 0
+      },
+      "'": {
+        "missTime": 1,
+        "averageTime": 3345
+      },
+      "@": {
+        "missTime": 0,
+        "averageTime": 3363
+      },
+      "u": {
+        "missTime": 0,
+        "averageTime": 3110.3333333333335
+      },
+      ">": {
+        "missTime": 1,
+        "averageTime": 3087
+      },
+      "J": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "q": {
+        "missTime": 0,
+        "averageTime": 3172.25
+      },
+      ".": {
+        "missTime": 0,
+        "averageTime": 2824
+      },
+      "_": {
+        "missTime": 1,
+        "averageTime": 3424
+      },
+      "N": {
+        "missTime": 0,
+        "averageTime": 3111.75
+      },
+      "X": {
+        "missTime": 0,
+        "averageTime": 3487.5
+      },
+      "T": {
+        "missTime": 1,
+        "averageTime": 3652.5
+      },
+      "Z": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "O": {
+        "missTime": 0,
+        "averageTime": 3359.5
+      },
+      "K": {
+        "missTime": 0,
+        "averageTime": 3339.5
+      },
+      ",": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      "L": {
+        "missTime": 0,
+        "averageTime": 3436.6666666666665
+      },
+      "s": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "#": {
+        "missTime": 1,
+        "averageTime": 3976
+      },
+      ";": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "G": {
+        "missTime": 0,
+        "averageTime": 3331.75
+      },
+      "b": {
+        "missTime": 0,
+        "averageTime": 3840
+      },
+      "k": {
+        "missTime": 0,
+        "averageTime": 3807
+      },
+      "`": {
+        "missTime": 1,
+        "averageTime": 3755
+      },
+      "e": {
+        "missTime": 0,
+        "averageTime": 2519.5
+      },
+      "S": {
+        "missTime": 0,
+        "averageTime": 1823
+      },
+      "n": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "!": {
+        "missTime": 0,
+        "averageTime": 3551
+      },
+      "U": {
+        "missTime": 0,
+        "averageTime": 2951
+      },
+      "|": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "Q": {
+        "missTime": 0,
+        "averageTime": 3503
+      }
+    },
+    {
+      "k": {
+        "missTime": 0,
+        "averageTime": 2497
+      },
+      "S": {
+        "missTime": 3,
+        "averageTime": 2935
+      },
+      "D": {
+        "missTime": 0,
+        "averageTime": 1991
+      },
+      "z": {
+        "missTime": 0,
+        "averageTime": 2884.6666666666665
+      },
+      "q": {
+        "missTime": 0,
+        "averageTime": 2217.25
+      },
+      "t": {
+        "missTime": 0,
+        "averageTime": 3071
+      },
+      "B": {
+        "missTime": 0,
+        "averageTime": 3333.6666666666665
+      },
+      "P": {
+        "missTime": 1,
+        "averageTime": 2703
+      },
+      "\\": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      ",": {
+        "missTime": 3,
+        "averageTime": 3431
+      },
+      "_": {
+        "missTime": 2,
+        "averageTime": 3615
+      },
+      "g": {
+        "missTime": 2,
+        "averageTime": 3211
+      },
+      "n": {
+        "missTime": 0,
+        "averageTime": 2781
+      },
+      "m": {
+        "missTime": 0,
+        "averageTime": 2263.6666666666665
+      },
+      "X": {
+        "missTime": 0,
+        "averageTime": 3114.3333333333335
+      },
+      "J": {
+        "missTime": 1,
+        "averageTime": 2609.5
+      },
+      "L": {
+        "missTime": 0,
+        "averageTime": 3106.5
+      },
+      "~": {
+        "missTime": 0,
+        "averageTime": 3415
+      },
+      "Y": {
+        "missTime": 0,
+        "averageTime": 3178.2
+      },
+      "d": {
+        "missTime": 0,
+        "averageTime": 3329
+      },
+      "j": {
+        "missTime": 1,
+        "averageTime": 3012.6666666666665
+      },
+      "`": {
+        "missTime": 1,
+        "averageTime": 3302.5
+      },
+      "$": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      "%": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      ")": {
+        "missTime": 2,
+        "averageTime": 2087
+      },
+      "E": {
+        "missTime": 0,
+        "averageTime": 2296.25
+      },
+      "Z": {
+        "missTime": 0,
+        "averageTime": 3153.3333333333335
+      },
+      "f": {
+        "missTime": 0,
+        "averageTime": 2376
+      },
+      ":": {
+        "missTime": 0,
+        "averageTime": 2750.8333333333335
+      },
+      "'": {
+        "missTime": 5,
+        "averageTime": 0
+      },
+      "T": {
+        "missTime": 0,
+        "averageTime": 3110.3333333333335
+      },
+      "M": {
+        "missTime": 0,
+        "averageTime": 2913.4
+      },
+      "#": {
+        "missTime": 1,
+        "averageTime": 3018.6666666666665
+      },
+      "U": {
+        "missTime": 0,
+        "averageTime": 3068.4
+      },
+      "@": {
+        "missTime": 0,
+        "averageTime": 2553
+      },
+      "(": {
+        "missTime": 0,
+        "averageTime": 2935.75
+      },
+      "v": {
+        "missTime": 0,
+        "averageTime": 3326.75
+      },
+      "I": {
+        "missTime": 0,
+        "averageTime": 3274
+      },
+      "<": {
+        "missTime": 0,
+        "averageTime": 3282.5
+      },
+      "e": {
+        "missTime": 0,
+        "averageTime": 3276
+      },
+      "p": {
+        "missTime": 1,
+        "averageTime": 2965.3333333333335
+      },
+      "l": {
+        "missTime": 3,
+        "averageTime": 0
+      },
+      "V": {
+        "missTime": 0,
+        "averageTime": 3142.5
+      },
+      ".": {
+        "missTime": 2,
+        "averageTime": 3301
+      },
+      "i": {
+        "missTime": 0,
+        "averageTime": 2647.6666666666665
+      },
+      "!": {
+        "missTime": 1,
+        "averageTime": 3337
+      },
+      ";": {
+        "missTime": 1,
+        "averageTime": 3005
+      },
+      "o": {
+        "missTime": 1,
+        "averageTime": 2879
+      },
+      "s": {
+        "missTime": 1,
+        "averageTime": 3057
+      },
+      "*": {
+        "missTime": 2,
+        "averageTime": 3874
+      },
+      "+": {
+        "missTime": 1,
+        "averageTime": 2897.3333333333335
+      },
+      "F": {
+        "missTime": 0,
+        "averageTime": 3414.6666666666665
+      },
+      "=": {
+        "missTime": 0,
+        "averageTime": 3118.5
+      },
+      "|": {
+        "missTime": 1,
+        "averageTime": 3221.5
+      },
+      "C": {
+        "missTime": 0,
+        "averageTime": 4010
+      },
+      "K": {
+        "missTime": 0,
+        "averageTime": 3466
+      },
+      "u": {
+        "missTime": 0,
+        "averageTime": 2475.75
+      },
+      "?": {
+        "missTime": 0,
+        "averageTime": 2554
+      },
+      "O": {
+        "missTime": 0,
+        "averageTime": 2830
+      },
+      "G": {
+        "missTime": 0,
+        "averageTime": 2848.6666666666665
+      },
+      "x": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "w": {
+        "missTime": 0,
+        "averageTime": 3094
+      },
+      "W": {
+        "missTime": 0,
+        "averageTime": 3520
+      },
+      "A": {
+        "missTime": 0,
+        "averageTime": 3254.6666666666665
+      },
+      "Q": {
+        "missTime": 0,
+        "averageTime": 3421
+      },
+      "R": {
+        "missTime": 0,
+        "averageTime": 2799.5
+      },
+      "\"": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "h": {
+        "missTime": 0,
+        "averageTime": 3273
+      },
+      "-": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "r": {
+        "missTime": 1,
+        "averageTime": 3506
+      },
+      "/": {
+        "missTime": 0,
+        "averageTime": 3320
+      },
+      ">": {
+        "missTime": 1,
+        "averageTime": 3185
+      },
+      "N": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "H": {
+        "missTime": 0,
+        "averageTime": 3037
+      },
+      "y": {
+        "missTime": 0,
+        "averageTime": 3803
+      },
+      "&": {
+        "missTime": 1,
+        "averageTime": 3873
+      },
+      "a": {
+        "missTime": 0,
+        "averageTime": 2998.5
+      },
+      "c": {
+        "missTime": 1,
+        "averageTime": 0
+      }
+    },
+    {
+      "G": {
+        "missTime": 0,
+        "averageTime": 2466.3333333333335
+      },
+      "J": {
+        "missTime": 1,
+        "averageTime": 2774.5
+      },
+      ".": {
+        "missTime": 1,
+        "averageTime": 2784
+      },
+      "p": {
+        "missTime": 0,
+        "averageTime": 3182.3333333333335
+      },
+      "W": {
+        "missTime": 0,
+        "averageTime": 2590.6666666666665
+      },
+      "t": {
+        "missTime": 0,
+        "averageTime": 3048.6666666666665
+      },
+      "|": {
+        "missTime": 1,
+        "averageTime": 2164
+      },
+      "j": {
+        "missTime": 0,
+        "averageTime": 3110.125
+      },
+      "L": {
+        "missTime": 0,
+        "averageTime": 3225.714285714286
+      },
+      "K": {
+        "missTime": 0,
+        "averageTime": 3012.3333333333335
+      },
+      "H": {
+        "missTime": 0,
+        "averageTime": 2065.5
+      },
+      "A": {
+        "missTime": 1,
+        "averageTime": 3028
+      },
+      "i": {
+        "missTime": 2,
+        "averageTime": 2668.8
+      },
+      "R": {
+        "missTime": 1,
+        "averageTime": 1901.3333333333333
+      },
+      "l": {
+        "missTime": 5,
+        "averageTime": 0
+      },
+      "^": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "d": {
+        "missTime": 1,
+        "averageTime": 2957
+      },
+      "u": {
+        "missTime": 1,
+        "averageTime": 3467.6666666666665
+      },
+      "=": {
+        "missTime": 1,
+        "averageTime": 3761
+      },
+      "w": {
+        "missTime": 0,
+        "averageTime": 3427
+      },
+      "I": {
+        "missTime": 1,
+        "averageTime": 3451.6666666666665
+      },
+      "v": {
+        "missTime": 0,
+        "averageTime": 3068.25
+      },
+      "X": {
+        "missTime": 1,
+        "averageTime": 3765.5
+      },
+      ",": {
+        "missTime": 1,
+        "averageTime": 3624
+      },
+      "f": {
+        "missTime": 0,
+        "averageTime": 2868.3333333333335
+      },
+      "k": {
+        "missTime": 0,
+        "averageTime": 1802.5
+      },
+      "r": {
+        "missTime": 0,
+        "averageTime": 1962
+      },
+      "`": {
+        "missTime": 4,
+        "averageTime": 2026
+      },
+      "m": {
+        "missTime": 1,
+        "averageTime": 3573
+      },
+      "z": {
+        "missTime": 0,
+        "averageTime": 3224.8
+      },
+      "Y": {
+        "missTime": 0,
+        "averageTime": 3091.5
+      },
+      "@": {
+        "missTime": 0,
+        "averageTime": 3335.8333333333335
+      },
+      "#": {
+        "missTime": 1,
+        "averageTime": 3627.3333333333335
+      },
+      "$": {
+        "missTime": 1,
+        "averageTime": 3729
+      },
+      ";": {
+        "missTime": 0,
+        "averageTime": 3063.25
+      },
+      "-": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "V": {
+        "missTime": 0,
+        "averageTime": 3618
+      },
+      "s": {
+        "missTime": 1,
+        "averageTime": 3699
+      },
+      "]": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "Z": {
+        "missTime": 1,
+        "averageTime": 3599.6666666666665
+      },
+      "g": {
+        "missTime": 0,
+        "averageTime": 3288.285714285714
+      },
+      "o": {
+        "missTime": 0,
+        "averageTime": 3031.5
+      },
+      "*": {
+        "missTime": 3,
+        "averageTime": 3940
+      },
+      "!": {
+        "missTime": 0,
+        "averageTime": 3761
+      },
+      "E": {
+        "missTime": 0,
+        "averageTime": 3465
+      },
+      "_": {
+        "missTime": 3,
+        "averageTime": 2967
+      },
+      "<": {
+        "missTime": 0,
+        "averageTime": 3855.6666666666665
+      },
+      "c": {
+        "missTime": 2,
+        "averageTime": 3482.6666666666665
+      },
+      "'": {
+        "missTime": 1,
+        "averageTime": 3578
+      },
+      "(": {
+        "missTime": 0,
+        "averageTime": 2949
+      },
+      "h": {
+        "missTime": 0,
+        "averageTime": 3705
+      },
+      "[": {
+        "missTime": 1,
+        "averageTime": 3678.3333333333335
+      },
+      "b": {
+        "missTime": 0,
+        "averageTime": 3681
+      },
+      "P": {
+        "missTime": 2,
+        "averageTime": 0
+      },
+      "y": {
+        "missTime": 1,
+        "averageTime": 3162
+      },
+      ":": {
+        "missTime": 0,
+        "averageTime": 2978
+      },
+      "D": {
+        "missTime": 0,
+        "averageTime": 3086.6
+      },
+      "e": {
+        "missTime": 0,
+        "averageTime": 2798
+      },
+      "T": {
+        "missTime": 0,
+        "averageTime": 3377
+      },
+      ")": {
+        "missTime": 1,
+        "averageTime": 3266
+      },
+      "a": {
+        "missTime": 0,
+        "averageTime": 2504
+      },
+      "N": {
+        "missTime": 0,
+        "averageTime": 2674.3333333333335
+      },
+      "&": {
+        "missTime": 0,
+        "averageTime": 2687.5
+      },
+      "B": {
+        "missTime": 0,
+        "averageTime": 3526
+      },
+      "/": {
+        "missTime": 0,
+        "averageTime": 2981.6666666666665
+      },
+      "{": {
+        "missTime": 2,
+        "averageTime": 3432
+      },
+      "F": {
+        "missTime": 0,
+        "averageTime": 3555
+      },
+      "C": {
+        "missTime": 0,
+        "averageTime": 2782
+      },
+      "\"": {
+        "missTime": 0,
+        "averageTime": 3455
+      },
+      "n": {
+        "missTime": 0,
+        "averageTime": 3819
+      },
+      "O": {
+        "missTime": 0,
+        "averageTime": 2936
+      },
+      "U": {
+        "missTime": 0,
+        "averageTime": 2476.5
+      },
+      "Q": {
+        "missTime": 0,
+        "averageTime": 1912
+      },
+      "\\": {
+        "missTime": 0,
+        "averageTime": 3124.5
+      },
+      "?": {
+        "missTime": 0,
+        "averageTime": 2271
+      },
+      "}": {
+        "missTime": 0,
+        "averageTime": 2682
+      },
+      ">": {
+        "missTime": 1,
+        "averageTime": 0
+      },
+      "x": {
+        "missTime": 0,
+        "averageTime": 3652
+      },
+      "M": {
+        "missTime": 0,
+        "averageTime": 3022
+      },
+      "S": {
+        "missTime": 0,
+        "averageTime": 2557
+      }
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Sky from '../sky';
+import './main.scss';
 
 function dataProcess(rawData) {
   const result = {};
@@ -67,7 +68,7 @@ export default class Container extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="top">
         <div>剩余时间： {this.state.time}</div>
         {this.state.time > 0 && this.props.start ? <Sky
           fontSize={this.state.fontSize}
