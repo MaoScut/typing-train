@@ -30,14 +30,14 @@ export function missOne() {
 
 export function over() {
   return {
-    type: TYPES.OVER,
+    type: TYPES.TRAIN_OVER,
   };
 }
 
 export function submitData(data) {
   return (dispatch) => {
     api(data).then(() => dispatch({
-      type: TYPES.SEND_DATA,
+      type: TYPES.SUBMIT_OVER,
     }));
   };
 }

@@ -9,6 +9,7 @@ import {
   CSetting as Setting,
   CLife as Life,
   CContainer as Container,
+  CPop as Pop,
 } from './components/containers';
 
 const store = createStore(reducer, applyMiddleware(thunk));
@@ -17,6 +18,7 @@ const App = (
     <div>
       <Setting />
       <Container />
+      <Pop />
     </div>
   </Provider>
 );

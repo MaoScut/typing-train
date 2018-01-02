@@ -5,6 +5,7 @@ import Setting from './setting';
 import Sky from './sky';
 import Life from './life';
 import Container from './container';
+import Pop from './pop';
 
 const CSetting = connect(
   state => state.setting,
@@ -32,9 +33,15 @@ const CLife = connect(
   null,
 )(Life);
 
+const CPop = connect(
+  state => state.pop,
+  null,
+)(Pop);
+
 export {
   CSetting,
   CSky,
   CLife,
   CContainer,
+  CPop,
 };
