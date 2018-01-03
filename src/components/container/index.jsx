@@ -40,7 +40,7 @@ export default class Container extends React.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    if (nextProps.start) {
+    if (nextProps.enterTrain) {
       this.setState({
         time: nextProps.time,
         fontSize: nextProps.fontSize,
@@ -67,14 +67,17 @@ export default class Container extends React.Component {
   }
 
   render() {
+    if (!this.props.enterTrain) {
+      return null;
+    }
     return (
       <div className="top">
         <div>剩余时间： {this.state.time}</div>
-        {this.state.time > 0 && this.props.start ? <Sky
+        <Sky
           fontSize={this.state.fontSize}
           speed={this.state.speed}
           data={this.state.data}
-        /> : null}
+        />
       </div>
     );
   }
