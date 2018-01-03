@@ -5,3 +5,6 @@ export const MISS_ONE = 'MISS_ONE';
 export const SEND_DATA = 'SEND_DATA';
 export const TRAIN_OVER = 'TRAIN_OVER';
 export const SUBMIT_OVER = 'SUBMIT_OVER';
+export const RETRAIN = 'RETRAIN';
+export const ENTER_SETTING = 'ENTER_SETTING';
+export const ENTER_TRAIN = 'ENTER_TRAIN';

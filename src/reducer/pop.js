@@ -19,6 +19,12 @@ const reducer = handleActions({
       submitOver: true,
     };
   },
+  [TYPES.ENTER_SETTING]() {
+    return initialState;
+  },
+  [TYPES.ENTER_TRAIN]() {
+    return initialState;
+  },
   [TYPES.SET]() {
     return initialState;
   },

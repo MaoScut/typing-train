@@ -16,6 +16,9 @@ export default class Setting extends React.Component {
     });
   }
   render() {
+    if (!this.props.enterSetting) {
+      return null;
+    }
     return (
       <div className="setting">
         字体大小:

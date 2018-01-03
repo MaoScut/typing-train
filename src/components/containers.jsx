@@ -35,7 +35,9 @@ const CLife = connect(
 
 const CPop = connect(
   state => state.pop,
-  null,
+  dispatch => ({
+    actions: bindActionCreators(actions, dispatch),
+  }),
 )(Pop);
 
 export {
