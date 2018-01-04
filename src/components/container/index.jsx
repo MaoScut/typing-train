@@ -40,7 +40,7 @@ export default class Container extends React.Component {
     };
   }
   componentWillReceiveProps(nextProps) {
-    if (nextProps.enterTrain) {
+    if (nextProps.show) {
       this.setState({
         time: nextProps.time,
         fontSize: nextProps.fontSize,
@@ -67,7 +67,7 @@ export default class Container extends React.Component {
   }
 
   render() {
-    if (!this.props.enterTrain) {
+    if (!this.props.show) {
       return null;
     }
     return (

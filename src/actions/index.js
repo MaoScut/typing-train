@@ -17,7 +17,7 @@ export function setSpeed(speed) {
 
 export function set(obj) {
   return {
-    type: TYPES.SET,
+    type: TYPES.ENTER_TRAIN,
     payload: obj,
   };
 }

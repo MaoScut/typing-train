@@ -1,7 +1,7 @@
 import React from 'react';
 import './main.scss';
 
-export function TrainOverPop() {
+function TrainOverPop() {
   return (
     <div className="pop">
       训练结束，上传数据中
@@ -9,7 +9,7 @@ export function TrainOverPop() {
   );
 }
 
-export function SubmitOverPop({ enterTrain, enterSetting }) {
+function SubmitOverPop({ enterTrain, enterSetting }) {
   return (
     <div className="pop">
       数据上传完毕
@@ -22,17 +22,17 @@ export function SubmitOverPop({ enterTrain, enterSetting }) {
 }
 
 export default function pop({
-  trainOver,
-  submitOver,
+  showTrainOverPop,
+  showSubmitOverPop,
   actions,
 }) {
   const { enterSetting, enterTrain } = actions;
-  if (trainOver) {
+  if (showTrainOverPop) {
     return (
       <TrainOverPop />
     );
   }
-  if (submitOver) {
+  if (showSubmitOverPop) {
     return (
       <SubmitOverPop enterTrain={enterTrain} enterSetting={enterSetting} />
     );

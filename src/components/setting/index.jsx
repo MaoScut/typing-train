@@ -16,7 +16,7 @@ export default class Setting extends React.Component {
     });
   }
   render() {
-    if (!this.props.enterSetting) {
+    if (!this.props.show) {
       return null;
     }
     return (

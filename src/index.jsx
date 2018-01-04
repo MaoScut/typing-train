@@ -7,7 +7,7 @@ import reducer from './reducer';
 // import App from './container';
 import {
   CSetting as Setting,
-  CLife as Life,
+  // CLife as Life,
   CContainer as Container,
   CPop as Pop,
 } from './components/containers';
