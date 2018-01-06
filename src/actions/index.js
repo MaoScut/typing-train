@@ -34,19 +34,19 @@ export function over() {
   };
 }
 
-// export function submitData(data) {
-//   return (dispatch) => {
-//     api(data).then(() => dispatch({
-//       type: TYPES.SUBMIT_OVER,
-//     }));
-//   };
-// }
-
-export function submitData() {
-  return {
-    type: TYPES.SUBMIT_OVER,
+export function submitData(data) {
+  return (dispatch) => {
+    api(data).then(() => dispatch({
+      type: TYPES.SUBMIT_OVER,
+    }));
   };
 }
+
+// export function submitData() {
+//   return {
+//     type: TYPES.SUBMIT_OVER,
+//   };
+// }
 
 export function enterSetting() {
   return {
