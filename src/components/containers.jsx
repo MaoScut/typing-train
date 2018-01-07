@@ -28,6 +28,7 @@ const CContainer = connect(
   state => ({
     ...state.setting,
     show: state.show.training,
+    dictionary: state.data.dictionary,
   }),
   dispatch => ({
     actions: bindActionCreators(actions, dispatch),

@@ -7,6 +7,9 @@ export default class Setting extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
+  componentDidMount() {
+    this.props.actions.fetchStaticsData();
+  }
   handleClick() {
     this.props.actions.set({
       fontSize: this.fontSizeInput.value,

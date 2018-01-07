@@ -1,5 +1,5 @@
 import * as TYPES from './types';
-import api from '../ajax';
+import * as api from '../ajax';
 
 export function setFontSize(size) {
   return {
@@ -36,8 +36,17 @@ export function over() {
 
 export function submitData(data) {
   return (dispatch) => {
-    api(data).then(() => dispatch({
+    api.saveData(data).then(() => dispatch({
       type: TYPES.SUBMIT_OVER,
+    }));
+  };
+}
+
+export function fetchStaticsData() {
+  return (dispatch) => {
+    api.fetchStaticsData().then(data => dispatch({
+      type: TYPES.RECEIVE_STATICS_DATA,
+      payload: JSON.parse(data),
     }));
   };
 }

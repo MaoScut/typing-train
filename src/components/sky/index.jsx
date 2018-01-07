@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'uuid';
 import Cloud from '../cloud';
-import nextChar from '../../dictionary';
+// import nextChar from '../../dictionary';
 
 // export default class sky extends React.Component {
 //   constructor(props) {
@@ -131,7 +131,7 @@ export default class sky extends React.Component {
     clearInterval(this.cloudInterval);
   }
   go() {
-    const c = nextChar();
+    const c = this.props.dictionary.next();
     const arr = this.state.clouds.concat({
       content: c,
       time: new Date(),

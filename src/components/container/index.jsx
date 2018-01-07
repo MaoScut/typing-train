@@ -77,6 +77,7 @@ export default class Container extends React.Component {
           fontSize={this.state.fontSize}
           speed={this.state.speed}
           data={this.state.data}
+          dictionary={this.props.dictionary}
         />
       </div>
     );

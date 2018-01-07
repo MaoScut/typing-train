@@ -4,6 +4,7 @@ export const SET = 'SET_FONT_SIZE_AND_SPEED';
 export const MISS_ONE = 'MISS_ONE';
 export const SEND_DATA = 'SEND_DATA';
 export const RETRAIN = 'RETRAIN';
+export const RECEIVE_STATICS_DATA = 'RECEIVE_STATICS_DATA';
 
 // 切换页面
 export const ENTER_SETTING = 'ENTER_SETTING';
