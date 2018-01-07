@@ -75,7 +75,11 @@ function statics() {
 }
 
 // statics().then(arr => console.log(arr));
+function readStaticData() {
+  return readAll(staticsPath);
+}
 
 module.exports = {
   saveTrainData,
+  readStaticData,
 };
