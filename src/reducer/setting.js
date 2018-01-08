@@ -3,9 +3,9 @@ import * as TYPES from '../actions/types';
 
 const defaultState = {
   speed: 1,
-  fontSize: 14,
+  fontSize: 20,
   hp: 100,
-  time: 5 * 60 * 1000,
+  time: 4 * 60 * 1000,
 };
 
 const reducer = handleActions({
