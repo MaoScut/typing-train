@@ -46,7 +46,7 @@ export default class Setting extends React.Component {
           type="text"
         />
         <br />
-        <button onClick={this.handleClick}>开始</button>
+        <button disabled={this.props.fetching} onClick={this.handleClick}>开始</button>
       </div>
     );
   }

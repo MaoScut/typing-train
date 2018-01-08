@@ -11,6 +11,7 @@ const CSetting = connect(
   state => ({
     ...state.setting,
     show: state.show.setting,
+    fetching: state.data.fetchingStatics,
   }),
   dispatch => ({
     actions: bindActionCreators(actions, dispatch),

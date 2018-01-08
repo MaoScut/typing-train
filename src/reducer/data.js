@@ -6,6 +6,7 @@ const initialState = {
   before: {},
   current: {},
   dictionary: null,
+  fetchingStatics: true,
 };
 const reducer = handleActions({
   [TYPES.SEND_DATA](state, action) {
@@ -18,6 +19,7 @@ const reducer = handleActions({
     return {
       ...state,
       dictionary: new Dictionary(action.payload),
+      fetchingStatics: false,
     };
   },
 }, initialState);

@@ -76,7 +76,7 @@ function statics() {
 
 // statics().then(arr => console.log(arr));
 function readStaticData() {
-  return readAll(staticsPath);
+  return statics().then(data => JSON.stringify(data));
 }
 
 module.exports = {
