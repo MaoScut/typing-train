@@ -105,30 +105,33 @@ export default class sky extends React.Component {
   constructor(props) {
     super(props);
     this.fallDownHandle = this.fallDownHandle.bind(this);
+    this.keyDownFunc = this.keyDownFunc.bind(this);
     this.go = this.go.bind(this);
     this.state = {
       clouds: [],
     };
   }
   componentDidMount() {
-    document.addEventListener('keydown', (e) => {
-      const arr = this.state.clouds.slice();
-      const index = arr.findIndex(c => c.content === e.key);
-      if (index >= 0) {
-        const cloud = arr.splice(index, 1)[0];
-        // const d = this.state.data;
-        cloud.clearedTime = new Date();
-        this.props.data.push(cloud);
-        this.setState({
-          clouds: arr,
-          // data: d,
-        });
-      }
-    });
+    document.addEventListener('keydown', this.keyDownFunc);
     this.cloudInterval = setInterval(this.go, 1000 / this.props.speed);
   }
   componentWillUnmount() {
     clearInterval(this.cloudInterval);
+    document.removeEventListener('keydown', this.keyDownFunc);
+  }
+  keyDownFunc(e) {
+    const arr = this.state.clouds.slice();
+    const index = arr.findIndex(c => c.content === e.key);
+    if (index >= 0) {
+      const cloud = arr.splice(index, 1)[0];
+      // const d = this.state.data;
+      cloud.clearedTime = new Date();
+      this.props.data.push(cloud);
+      this.setState({
+        clouds: arr,
+        // data: d,
+      });
+    }
   }
   go() {
     const c = this.props.dictionary.next();
