@@ -1,5 +1,6 @@
 import React from 'react';
 import Sky from '../sky';
+import Poker from '../poker';
 import './main.scss';
 
 function dataProcess(rawData) {
@@ -73,7 +74,7 @@ export default class Container extends React.Component {
     return (
       <div className="top">
         <div>剩余时间： {this.state.time}</div>
-        <Sky
+        <Poker
           fontSize={this.state.fontSize}
           speed={this.state.speed}
           data={this.state.data}
