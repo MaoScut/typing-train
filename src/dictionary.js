@@ -13,6 +13,17 @@
 //   const rand = Math.floor(Math.random() * len);
 //   return set[rand];
 // }
+
+function shuffle(a) {
+  const len = a.length;
+  for (let i = 0; i < len - 1; i += 1) {
+    const index = parseInt(Math.random() * (len - i), 10);
+    const temp = a[index];
+    a[index] = a[len - i - 1];
+    a[len - i - 1] = temp;
+  }
+}
+
 export default class Dictionary {
   constructor(statics) {
     this.str = '';
@@ -21,6 +32,9 @@ export default class Dictionary {
       const arr = new Array(n).fill(key);
       this.str += arr.join('');
     });
+    const tmpArr = this.str.split('');
+    shuffle(tmpArr);
+    this.str = tmpArr.join('');
   }
   next() {
     const len = this.str.length;
@@ -28,3 +42,4 @@ export default class Dictionary {
     return this.str[rand];
   }
 }
+
