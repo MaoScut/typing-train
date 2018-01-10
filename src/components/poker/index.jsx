@@ -23,16 +23,16 @@ export default class Poker extends React.Component {
         ...this.state,
         clearedTime: new Date(),
       });
+      this.setState({
+        time: new Date(),
+        content: this.props.dictionary.next(),
+      });
     } else {
       this.props.data.push({
         ...this.state,
         clearedTime: Infinity,
       });
     }
-    this.setState({
-      time: new Date(),
-      content: this.props.dictionary.next(),
-    });
   }
   render() {
     return (
