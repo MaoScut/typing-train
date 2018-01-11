@@ -36,7 +36,7 @@ export default class Poker extends React.Component {
   }
   render() {
     return (
-      <Card content={this.state.content} />
+      <Card fontSize={this.props.fontSize} content={this.state.content} />
     );
   }
 }

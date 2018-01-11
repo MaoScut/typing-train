@@ -49,7 +49,6 @@ export default class Container extends React.Component {
         data: [],
       });
       this.timer = setInterval(() => {
-        console.log(this.state.data);
         this.setState((preState) => {
           if (preState.time <= 0) {
             clearInterval(this.timer);
