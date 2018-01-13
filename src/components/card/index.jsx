@@ -13,6 +13,6 @@ export default function Card({ content, fontSize }) {
     height: fontSize + 'px',
   };
   return (
-    <div style={styleObj}>{content}</div>
+    <div style={styleObj}><pre>{content}</pre></div>
   );
 }
