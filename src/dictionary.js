@@ -28,7 +28,7 @@ export default class Dictionary {
   constructor(statics) {
     this.str = '';
     Object.keys(statics).forEach((key) => {
-      const n = Math.ceil(statics[key] / 1000);
+      const n = Math.ceil(statics[key] / 100);
       const arr = new Array(n).fill(key);
       this.str += arr.join('');
     });
