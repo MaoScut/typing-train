@@ -8,13 +8,7 @@
     "type": "node",
     "request": "launch",
     "name": "Launch Program",
-    "program": "${workspaceFolder}/server/index.js"
+    "program": "${workspaceFolder}/server/data/checkData.js"
   },
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Program",
-      "program": "${workspaceFolder}\\webpack.config.js"
-    }
   ]
 }
