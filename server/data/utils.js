@@ -74,12 +74,49 @@ function statics() {
     });
 }
 
+// 只统计最近20次的数据
+function partlyStatics() {
+  return readAll(dataPath)
+    .then(str => JSON.parse(str))
+    .then((obj) => {
+      const arr = obj.detail.slice(-20, -1);
+      const result = {};
+      for (let i = 0; i < arr.length; i += 1) {
+        Object.keys(arr[i]).forEach((key) => {
+          if (!result[key]) {
+            result[key] = [arr[i][key]];
+          } else {
+            result[key].push(arr[i][key]);
+          }
+        });
+      }
+      // 把平均时间和错过次数转化为一个指标，该指标为反应时间
+      Object.keys(result).forEach((key) => {
+        const tmp = result[key];
+        let missTimeSum = 0;
+        let averageTimeSum = 0;
+        tmp.forEach((o) => {
+          missTimeSum += Number(o.missTime);
+          averageTimeSum += Number(o.averageTime);
+        });
+        const r = {
+          missTime: missTimeSum / tmp.length,
+          averageTime: averageTimeSum / tmp.length,
+        };
+        const reactTime = r.averageTime + r.missTime;
+        result[key] = reactTime;
+      });
+      return result;
+    });
+}
 // statics().then(arr => console.log(arr));
 function readStaticData() {
-  return statics().then(data => JSON.stringify(data));
+  return partlyStatics().then(data => JSON.stringify(data));
 }
 
 module.exports = {
   saveTrainData,
   readStaticData,
+  readAll,
+  writeAll,
 };
