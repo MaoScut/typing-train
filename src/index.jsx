@@ -10,6 +10,7 @@ import {
   // CLife as Life,
   CContainer as Container,
   CPop as Pop,
+  CStatics as Statics,
 } from './components/containers';
 
 const store = createStore(reducer, applyMiddleware(thunk));
@@ -19,6 +20,7 @@ const App = (
       <Setting />
       <Container />
       <Pop />
+      <Statics />
     </div>
   </Provider>
 );

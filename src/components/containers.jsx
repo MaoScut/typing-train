@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as actions from '../actions';
 import Setting from './setting';
-// import Sky from './sky';
+import Statics from './statics';
 import Life from './life';
 import Container from './container';
 import Pop from './pop';
@@ -18,12 +18,12 @@ const CSetting = connect(
   }),
 )(Setting);
 
-// const CSky = connect(
-//   state => state.setting,
-//   dispatch => ({
-//     actions: bindActionCreators(actions, dispatch),
-//   }),
-// )(Sky);
+const CStatics = connect(
+  state => state.setting,
+  dispatch => ({
+    actions: bindActionCreators(actions, dispatch),
+  }),
+)(Statics);
 
 const CContainer = connect(
   state => ({
@@ -57,4 +57,5 @@ export {
   CLife,
   CContainer,
   CPop,
+  CStatics,
 };
