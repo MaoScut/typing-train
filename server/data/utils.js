@@ -114,9 +114,33 @@ function readStaticData() {
   return partlyStatics().then(data => JSON.stringify(data));
 }
 
+function staticsData() {
+  return readAll(dataPath)
+    .then(str => JSON.parse(str))
+    .then((o) => {
+      const arr = o.detail;
+      const chars = 'abcdefghijklmnopqrestuvwxyz';
+      const len = arr.length;
+      const result = {};
+      for (let j = 0; j < chars.length; j += 1) {
+        result[chars[j]] = [];
+        for (let i = 0; i < len; i += 1) {
+          if (arr[i][chars[j]]) {
+            result[chars[j]].push(arr[i][chars[j]].averageTime);
+          } else {
+            result[chars[j]].push(0);
+          }
+        }
+      }
+      return result;
+    })
+    .then(obj => JSON.stringify(obj));
+}
+
 module.exports = {
   saveTrainData,
   readStaticData,
   readAll,
   writeAll,
+  staticsData,
 };

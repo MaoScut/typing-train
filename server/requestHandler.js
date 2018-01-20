@@ -6,7 +6,11 @@ function sendTrainData(req, res) {
 function fetchStaticsData(req, res) {
   data.readStaticData().then(str => res.end(str));
 }
+function staticsData(req, res) {
+  data.staticsData().then(str => res.end(str));
+}
 module.exports = {
   sendTrainData,
   fetchStaticsData,
+  staticsData,
 };

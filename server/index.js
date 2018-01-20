@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.post('/sendTrainData', requestHandler.sendTrainData);
 app.get('/fetchStaticsData', requestHandler.fetchStaticsData);
+app.get('/staticsData', requestHandler.staticsData);
 app.listen(port, (error) => {
   if (error) {
     console.error(error);
