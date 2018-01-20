@@ -19,7 +19,10 @@ const CSetting = connect(
 )(Setting);
 
 const CStatics = connect(
-  state => state.setting,
+  state => ({
+    ...state.setting,
+    ...state.statics,
+  }),
   dispatch => ({
     actions: bindActionCreators(actions, dispatch),
   }),

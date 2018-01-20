@@ -13,3 +13,6 @@ export const ENTER_TRAIN = 'ENTER_TRAIN';
 // 一次训练完后，触发
 export const TRAIN_OVER = 'TRAIN_OVER';
 export const SUBMIT_OVER = 'SUBMIT_OVER';
+
+export const FETCHING_SINGLE_CHAR_DATA = 'FETCHING_SINGLE_CHAR_DATA';
+export const FETCHED_SINGLE_CHAR_DATA = 'FETCHED_SINGLE_CHAR_DATA';

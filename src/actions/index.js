@@ -69,3 +69,12 @@ export function enterTrain() {
     type: TYPES.ENTER_TRAIN,
   };
 }
+
+export function fetchSingleCharData() {
+  return (dispatch) => {
+    api.staticsData().then(data => dispatch({
+      payload: JSON.parse(data),
+      type: TYPES.FETCHED_SINGLE_CHAR_DATA,
+    }));
+  };
+}
