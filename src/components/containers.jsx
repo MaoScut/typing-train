@@ -6,6 +6,7 @@ import Statics from './statics';
 import Life from './life';
 import Container from './container';
 import Pop from './pop';
+import Router from './router';
 
 const CSetting = connect(
   state => ({
@@ -54,6 +55,15 @@ const CPop = connect(
   }),
 )(Pop);
 
+const CRouter = connect(
+  state => ({
+    ...state.show,
+  }),
+  dispatch => ({
+    actions: bindActionCreators(actions, dispatch),
+  }),
+)(Router);
+
 export {
   CSetting,
   // CSky,
@@ -61,4 +71,5 @@ export {
   CContainer,
   CPop,
   CStatics,
+  CRouter,
 };

@@ -47,6 +47,7 @@ export default class Setting extends React.Component {
         />
         <br />
         <button disabled={this.props.fetching} onClick={this.handleClick}>开始</button>
+        <button onClick={() => this.props.actions.showStatics()}>统计</button>
       </div>
     );
   }

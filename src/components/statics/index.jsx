@@ -62,8 +62,9 @@ export default class Static extends React.Component {
   }
   render() {
     return (
-      <div ref={(container) => { this.container = container; }}>
-        hhh
+      <div>
+        <div ref={(container) => { this.container = container; }} />
+        <button onClick={() => this.props.actions.enterSetting()}>返回</button>
       </div>
     );
   }

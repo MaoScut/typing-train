@@ -7,34 +7,38 @@ const initialState = {
   training: false,
   trainOverPop: false,
   submitOverPop: false,
+  statics: false,
 };
 
 const reducer = handleActions({
   [TYPES.ENTER_SETTING]() {
     return initialState;
   },
-  [TYPES.ENTER_TRAIN]() {
+  [TYPES.ENTER_TRAIN](state) {
     return {
+      ...state,
       setting: false,
       training: true,
-      trainOverPop: false,
-      submitOverPop: false,
     };
   },
-  [TYPES.TRAIN_OVER]() {
+  [TYPES.TRAIN_OVER](state) {
     return {
-      setting: false,
+      ...state,
       training: false,
       trainOverPop: true,
-      submitOverPop: false,
     };
   },
-  [TYPES.SUBMIT_OVER]() {
+  [TYPES.SUBMIT_OVER](state) {
     return {
-      setting: false,
-      training: false,
+      ...state,
       trainOverPop: false,
       submitOverPop: true,
+    };
+  },
+  [TYPES.SHOW_STATICS](state) {
+    return {
+      ...state,
+      statics: true,
     };
   },
 }, initialState);

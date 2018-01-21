@@ -78,3 +78,9 @@ export function fetchSingleCharData() {
     }));
   };
 }
+
+export function showStatics() {
+  return {
+    type: TYPES.SHOW_STATICS,
+  };
+}

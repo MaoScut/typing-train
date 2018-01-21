@@ -40,42 +40,30 @@ export default class Container extends React.Component {
       data: [],
     };
   }
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.show) {
-      this.setState({
-        time: nextProps.time,
-        fontSize: nextProps.fontSize,
-        speed: nextProps.speed,
-        data: [],
-      });
-      this.timer = setInterval(() => {
-        this.setState((preState) => {
-          if (preState.time <= 0) {
-            clearInterval(this.timer);
-            this.props.actions.over();
-            this.props.actions.submitData(dataProcess(this.state.data));
-            return ({
-              time: 0,
-            });
-          }
+  componentDidMount() {
+    this.timer = setInterval(() => {
+      this.setState((preState) => {
+        if (preState.time <= 0) {
+          clearInterval(this.timer);
+          this.props.actions.over();
+          this.props.actions.submitData(dataProcess(this.state.data));
           return ({
-            time: preState.time - 100,
+            time: 0,
           });
+        }
+        return ({
+          time: preState.time - 100,
         });
-      }, 100);
-    }
+      });
+    }, 100);
   }
-
   render() {
-    if (!this.props.show) {
-      return null;
-    }
     return (
       <div className="top">
         <div>剩余时间： {this.state.time}</div>
         <Poker
-          fontSize={this.state.fontSize}
-          speed={this.state.speed}
+          fontSize={this.props.fontSize}
+          speed={this.props.speed}
           data={this.state.data}
           dictionary={this.props.dictionary}
         />
