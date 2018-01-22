@@ -6,11 +6,6 @@ import thunk from 'redux-thunk';
 import reducer from './reducer';
 // import App from './container';
 import {
-  // CSetting as Setting,
-  // // CLife as Life,
-  // CContainer as Container,
-  // CPop as Pop,
-  // CStatics as Statics,
   CRouter as Router,
 } from './components/containers';
 
