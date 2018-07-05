@@ -131,6 +131,7 @@ function staticsData() {
             result[chars[j]].push(0);
           }
         }
+        result[chars[j]] = result[chars[j]].slice(-20);
       }
       return result;
     })
