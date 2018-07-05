@@ -20,14 +20,11 @@ export default class Static extends React.Component {
     console.log(data);
     highCharts.chart(this.container, {
       title: {
-        text: '2010 ~ 2016 年太阳能行业就业人员发展情况',
-      },
-      subtitle: {
-        text: '数据来源：thesolarfoundation.com',
+        text: '近段时间字符的反应时间统计表',
       },
       yAxis: {
         title: {
-          text: '就业人数',
+          text: '反应时间',
         },
       },
       legend: {
@@ -40,7 +37,7 @@ export default class Static extends React.Component {
           label: {
             connectorAllowed: false,
           },
-          pointStart: 2010,
+          pointStart: 1,
         },
       },
       series: data,
