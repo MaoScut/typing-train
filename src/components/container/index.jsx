@@ -61,7 +61,13 @@ export default class Container extends React.Component {
     return (
       <div className="top">
         <div>剩余时间： {this.state.time}</div>
-        <Poker
+        {/* <Poker
+          fontSize={this.props.fontSize}
+          speed={this.props.speed}
+          data={this.state.data}
+          dictionary={this.props.dictionary}
+        /> */}
+        <Sky
           fontSize={this.props.fontSize}
           speed={this.props.speed}
           data={this.state.data}
