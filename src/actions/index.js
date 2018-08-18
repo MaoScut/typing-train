@@ -35,7 +35,6 @@ export function over() {
 }
 
 export function submitData(data) {
-  console.log(data);
   return (dispatch) => {
     api.saveData(data).then(() => dispatch({
       type: TYPES.SUBMIT_OVER,
