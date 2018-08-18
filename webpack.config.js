@@ -19,9 +19,12 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loaders: ['style-loader', 'css-loader', 'sass-loader'],
+    },{
+      test: /\.tsx?$/,
+      loader: "awesome-typescript-loader",
     }],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
   },
 };
