@@ -1,11 +1,10 @@
 import { handleActions } from 'redux-actions';
 import * as TYPES from '../actions/types';
-import Dictionary from '../class/Dictionary';
 import {
   Action, 
   State,
+  Dictionary,
 } from '../class';
-
 
 const initialState: State = {
   before: {},

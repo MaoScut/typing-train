@@ -15,6 +15,17 @@ export function setSpeed(speed) {
   };
 }
 
+/**
+ * 进入训练，需要传入设置obj
+ * @export
+ * @param {*} obj
+ * {
+ *    fontSize: "20",
+ *    speed: "1",
+ *    time: 240000,
+ * }
+ * @returns
+ */
 export function set(obj) {
   return {
     type: TYPES.ENTER_TRAIN,
@@ -42,6 +53,12 @@ export function submitData(data) {
   };
 }
 
+// 获取字符统计数据
+// json数据格式
+// {
+//    symbol: 一个反映反应速度的数字,
+//    ...
+// }
 export function fetchStaticsData() {
   return (dispatch) => {
     api.fetchStaticsData().then(data => dispatch({
@@ -69,6 +86,16 @@ export function enterTrain() {
   };
 }
 
+/**
+ *
+ *
+ * @export
+ * @returns json data
+ * {
+ *    symbol: [20个指标],
+ *    ...
+ * }
+ */
 export function fetchSingleCharData() {
   return (dispatch) => {
     api.staticsData().then(data => dispatch({

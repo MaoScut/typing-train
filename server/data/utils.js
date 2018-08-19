@@ -29,6 +29,17 @@ function writeAll(arr, p) {
 // }
 const dataPath = path.resolve(__dirname, './data.json');
 // const staticsPath = path.resolve(__dirname, './statics.json');
+
+/**
+ * 参数data的格式
+ * @param {Object} data
+ * {
+ *    symbol: {
+ *      averageTime: ,
+ *      missTime: ,
+ *    }
+ * }
+ */
 function saveTrainData(data) {
   return readAll(dataPath)
     .then(str => JSON.parse(str))

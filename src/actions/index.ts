@@ -1,53 +1,46 @@
 import * as TYPES from './types';
 import * as api from '../ajax';
 
-export function setFontSize(size:Number) {
-  return {
-    type: TYPES.SET_FONTSIZE,
-    payload: size,
-  };
+import {
+  SettingObj,
+  Action,
+} from '../class';
+
+export function setFontSize(size: number) {
+  return new Action(TYPES.SET_FONTSIZE, size);
 }
 
 export function setSpeed(speed: number) {
-  return {
-    type: TYPES.SET_SPEED,
-    payload: speed,
-  };
+  return new Action(TYPES.SET_SPEED,speed);
 }
 
-export function set(obj) {
-  return {
-    type: TYPES.ENTER_TRAIN,
-    payload: obj,
-  };
+export function set(obj: SettingObj) {
+  return new Action(TYPES.ENTER_TRAIN,obj);
 }
 
 export function missOne() {
-  return {
-    type: TYPES.MISS_ONE,
-  };
+  return new Action(TYPES.MISS_ONE);
 }
 
 export function over() {
-  return {
-    type: TYPES.TRAIN_OVER,
-  };
+  return new Action(TYPES.TRAIN_OVER);
 }
 
-export function submitData(data) {
-  return (dispatch) => {
-    api.saveData(data).then(() => dispatch({
-      type: TYPES.SUBMIT_OVER,
-    }));
+export function submitData(data: any) {
+  return (dispatch: Function) => {
+    api.saveData(data).then(() => dispatch(new Action(
+      TYPES.SUBMIT_OVER,
+    )
+    ));
   };
 }
 
 export function fetchStaticsData() {
-  return (dispatch) => {
-    api.fetchStaticsData().then(data => dispatch({
-      type: TYPES.RECEIVE_STATICS_DATA,
-      payload: JSON.parse(data),
-    }));
+  return (dispatch: Function) => {
+    api.fetchStaticsData().then(data => dispatch(new Action(
+      TYPES.RECEIVE_STATICS_DATA,
+      JSON.parse(data),
+    )));
   };
 }
 
@@ -58,9 +51,7 @@ export function fetchStaticsData() {
 // }
 
 export function enterSetting() {
-  return {
-    type: TYPES.ENTER_SETTING,
-  };
+  return new Action (TYPES.ENTER_SETTING);
 }
 
 export function enterTrain() {
@@ -70,16 +61,14 @@ export function enterTrain() {
 }
 
 export function fetchSingleCharData() {
-  return (dispatch) => {
-    api.staticsData().then(data => dispatch({
-      payload: JSON.parse(data),
-      type: TYPES.FETCHED_SINGLE_CHAR_DATA,
-    }));
+  return (dispatch: Function) => {
+    api.staticsData().then(data => dispatch(new Action(
+      TYPES.FETCHED_SINGLE_CHAR_DATA,
+      JSON.parse(data),
+    )));
   };
 }
 
 export function showStatics() {
-  return {
-    type: TYPES.SHOW_STATICS,
-  };
+  return new Action (TYPES.SHOW_STATICS);
 }
